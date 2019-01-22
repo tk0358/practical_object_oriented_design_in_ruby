@@ -28,7 +28,7 @@ class MountainBike < Bicycle
   end
 
   def spares
-    super.merge(rear_shock: rear_shock)
+    super.merge({rear_shock: rear_shock})
   end
 end
 

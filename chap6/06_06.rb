@@ -35,7 +35,7 @@ class MountainBike < Bicycle
   end
 
   def spares
-    super.merge(rear_shock: rear_shock)
+    super.merge({rear_shock: rear_shock})
   end
 end
 
@@ -48,4 +48,4 @@ mountain_bike = MountainBike.new(
                   size: 'S',
                   front_shock: 'Maintou',
                   rear_shock: 'Fox')
-p mountain_bike.size 
+p mountain_bike.size
