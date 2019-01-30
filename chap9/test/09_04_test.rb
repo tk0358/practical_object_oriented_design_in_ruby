@@ -11,7 +11,7 @@ class WheelTest < Minitest::Unit::TestCase
   end
 
   def test_calculates_diameter
-    wheel = Wheel.nw(26, 1.5)
+    wheel = Wheel.new(26, 1.5)
 
     assert_in_delta(29, wheel.diameter, 0.01)
   end
